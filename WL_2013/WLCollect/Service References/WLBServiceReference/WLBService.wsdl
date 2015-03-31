@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetMinDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nodecode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMinDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMinDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaxDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nodecode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaxDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMaxDateResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCollectByDateRange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nodecode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="minDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCollectByDateRangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCollectByDateRangeResult" type="tns:ArrayOfCollectByDateRange" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCollectByDateRange">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CollectByDateRange" nillable="true" type="tns:CollectByDateRange" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CollectByDateRange">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Counts" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Packages" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Total" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReadByDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nodecode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadByDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadByDateResult" type="tns:ArrayOfWLB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWLB">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WLB" nillable="true" type="tns:WLB" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WLB">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Node" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDT" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SK_Type" type="tns:SKType" />
+          <s:element minOccurs="1" maxOccurs="1" name="YD_Type" type="tns:YDType" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZT_Type" type="tns:ZTType" />
+          <s:element minOccurs="0" maxOccurs="1" name="FH_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FH_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FH_CityName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JH_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JH_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CZ_RQ" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZ_BC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZ_DZ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZ_SJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZ_CPH" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CZ_LC" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CZ_YX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HW_MC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HW_LX" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="HW_JS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HW_BJ" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="FHR_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FHR_Mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FHR_Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JHR_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JHR_Mobile" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="JFZL" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="JFTJ" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TYF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BZF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="BXF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Total" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Money" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="BXD_SN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Freeze" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Synced" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sets" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="SKType">
+        <s:restriction base="s:string">
+          <s:enumeration value="现金" />
+          <s:enumeration value="到付" />
+          <s:enumeration value="记账" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="YDType">
+        <s:restriction base="s:string">
+          <s:enumeration value="本地" />
+          <s:enumeration value="中心" />
+          <s:enumeration value="结账" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ZTType">
+        <s:restriction base="s:string">
+          <s:enumeration value="接货" />
+          <s:enumeration value="装车" />
+          <s:enumeration value="卸车" />
+          <s:enumeration value="取货" />
+          <s:enumeration value="作废" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetMinDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMinDate" />
+  </wsdl:message>
+  <wsdl:message name="GetMinDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMinDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaxDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaxDate" />
+  </wsdl:message>
+  <wsdl:message name="GetMaxDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaxDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCollectByDateRangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCollectByDateRange" />
+  </wsdl:message>
+  <wsdl:message name="GetCollectByDateRangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCollectByDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadByDateSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadByDate" />
+  </wsdl:message>
+  <wsdl:message name="ReadByDateSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadByDateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WLBServiceSoap">
+    <wsdl:operation name="GetMinDate">
+      <wsdl:input message="tns:GetMinDateSoapIn" />
+      <wsdl:output message="tns:GetMinDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxDate">
+      <wsdl:input message="tns:GetMaxDateSoapIn" />
+      <wsdl:output message="tns:GetMaxDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCollectByDateRange">
+      <wsdl:input message="tns:GetCollectByDateRangeSoapIn" />
+      <wsdl:output message="tns:GetCollectByDateRangeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadByDate">
+      <wsdl:input message="tns:ReadByDateSoapIn" />
+      <wsdl:output message="tns:ReadByDateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WLBServiceSoap" type="tns:WLBServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMinDate">
+      <soap:operation soapAction="http://tempuri.org/GetMinDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxDate">
+      <soap:operation soapAction="http://tempuri.org/GetMaxDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCollectByDateRange">
+      <soap:operation soapAction="http://tempuri.org/GetCollectByDateRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadByDate">
+      <soap:operation soapAction="http://tempuri.org/ReadByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WLBServiceSoap12" type="tns:WLBServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMinDate">
+      <soap12:operation soapAction="http://tempuri.org/GetMinDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaxDate">
+      <soap12:operation soapAction="http://tempuri.org/GetMaxDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCollectByDateRange">
+      <soap12:operation soapAction="http://tempuri.org/GetCollectByDateRange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadByDate">
+      <soap12:operation soapAction="http://tempuri.org/ReadByDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WLBService">
+    <wsdl:port name="WLBServiceSoap" binding="tns:WLBServiceSoap">
+      <soap:address location="http://localhost:32209/WLBService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WLBServiceSoap12" binding="tns:WLBServiceSoap12">
+      <soap12:address location="http://localhost:32209/WLBService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

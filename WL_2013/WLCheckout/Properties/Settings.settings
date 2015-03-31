@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLCheckout.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SoftwareName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">公路客运联网小件系统-结账平台</Value>
+    </Setting>
+    <Setting Name="SoftwareVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2013</Value>
+    </Setting>
+    <Setting Name="TechnicalSupport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0431-86769937</Value>
+    </Setting>
+    <Setting Name="AutoLogin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Userid" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoSyncServerDT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ConfirmClose" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PingEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PingTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="CollectByCustomerSortMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Total</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

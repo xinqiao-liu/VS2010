@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF57C90-66F6-4ABB-9BE2-6ADF6F74D3D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLManager</RootNamespace>
+    <AssemblyName>WLManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>ftp://192.168.11.208/wlm/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.11.208/wlm/</InstallUrl>
+    <UpdateUrl>http://192.168.11.208/wlm/</UpdateUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>小件前台办单</ProductName>
+    <PublisherName>总站业务处</PublisherName>
+    <SuiteName>小件管理系统</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\物流部署\管理\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5BCC75EA0BE37055041416B249DFD6CAACFB271F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WLManager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>systekm folder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WLManager.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Central\ManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\ManageForm.Designer.cs">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central\QHConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\QHConfirmForm.Designer.cs">
+      <DependentUpon>QHConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central\UploadToCentralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\UploadToCentralForm.Designer.cs">
+      <DependentUpon>UploadToCentralForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central\XCConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\XCConfirmForm.Designer.cs">
+      <DependentUpon>XCConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central\YDTrackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\YDTrackForm.Designer.cs">
+      <DependentUpon>YDTrackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Central\ZCConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Central\ZCConfirmForm.Designer.cs">
+      <DependentUpon>ZCConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientSettingForm.Designer.cs">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateDailySheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDailySheetForm.Designer.cs">
+      <DependentUpon>CreateDailySheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeForm.Designer.cs">
+      <DependentUpon>ChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserOverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOverForm.Designer.cs">
+      <DependentUpon>UserOverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SyncCPHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncCPHForm.Designer.cs">
+      <DependentUpon>SyncCPHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateForm.designer.cs">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Central\ManageForm.resx">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central\QHConfirmForm.resx">
+      <DependentUpon>QHConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central\UploadToCentralForm.resx">
+      <DependentUpon>UploadToCentralForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central\XCConfirmForm.resx">
+      <DependentUpon>XCConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central\YDTrackForm.resx">
+      <DependentUpon>YDTrackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Central\ZCConfirmForm.resx">
+      <DependentUpon>ZCConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSettingForm.resx">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDailySheetForm.resx">
+      <DependentUpon>CreateDailySheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeForm.resx">
+      <DependentUpon>ChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOverForm.resx">
+      <DependentUpon>UserOverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SyncCPHForm.resx">
+      <DependentUpon>SyncCPHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateForm.resx">
+      <DependentUpon>CreateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AD2203BC-2E50-492D-937C-193519D23B81}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KYDataLogicLayer\KYDataLogicLayer.csproj">
+      <Project>{7D982B97-C19D-4945-8DCD-A5117FA048FA}</Project>
+      <Name>KYDataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KYDataModelLayer\KYDataModelLayer.csproj">
+      <Project>{CE794535-15D1-4957-A7DA-8040A25A6AF9}</Project>
+      <Name>KYDataModelLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLCommon\WLCommon.csproj">
+      <Project>{58F365AA-5A34-4D56-BED2-F61296629087}</Project>
+      <Name>WLCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataLogicLayer\WLDataLogicLayer.csproj">
+      <Project>{FE09B880-C31E-4926-BDFA-927A78C57ED7}</Project>
+      <Name>WLDataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataModelLayer\WLDataModelLayer.csproj">
+      <Project>{FB8C00C1-37B1-44FA-AE5F-F999643C1F9A}</Project>
+      <Name>WLDataModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="systekm folder.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

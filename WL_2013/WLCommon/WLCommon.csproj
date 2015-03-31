@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58F365AA-5A34-4D56-BED2-F61296629087}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLCommon</RootNamespace>
+    <AssemblyName>WLCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>.\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportExcel.cs" />
+    <Compile Include="InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputForm.Designer.cs">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AuthorizeCustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\AuthorizeCustomForm.Designer.cs">
+      <DependentUpon>AuthorizeCustomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AuthorizetAppendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\AuthorizetAppendForm.Designer.cs">
+      <DependentUpon>AuthorizetAppendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\AuthorizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\AuthorizeForm.Designer.cs">
+      <DependentUpon>AuthorizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MappingEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\MappingEditForm.Designer.cs">
+      <DependentUpon>MappingEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\MappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\MappingForm.Designer.cs">
+      <DependentUpon>MappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\NodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\NodeForm.Designer.cs">
+      <DependentUpon>NodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BZFLEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BZFLEditForm.Designer.cs">
+      <DependentUpon>BZFLEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BillEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BillEditForm.designer.cs">
+      <DependentUpon>BillEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BillForm.designer.cs">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BZFLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BZFLForm.Designer.cs">
+      <DependentUpon>BZFLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BZXXEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BZXXEditForm.Designer.cs">
+      <DependentUpon>BZXXEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BZXXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BZXXForm.Designer.cs">
+      <DependentUpon>BZXXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CustomerEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\CustomerEditForm.Designer.cs">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\HWLXEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\HWLXEditForm.designer.cs">
+      <DependentUpon>HWLXEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\HWLXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\HWLXForm.designer.cs">
+      <DependentUpon>HWLXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoutForm.Designer.cs">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PrintFormatEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\PrintFormatEditForm.designer.cs">
+      <DependentUpon>PrintFormatEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\PrintFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\PrintFormatForm.designer.cs">
+      <DependentUpon>PrintFormatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintBill.cs" />
+    <Compile Include="QueryDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryDateForm.Designer.cs">
+      <DependentUpon>QueryDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryMode.cs" />
+    <Compile Include="QueryRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryRangeForm.Designer.cs">
+      <DependentUpon>QueryRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPrintForm.Designer.cs">
+      <DependentUpon>ReportPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPasswordForm.designer.cs">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\BaseSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\BaseSettingForm.Designer.cs">
+      <DependentUpon>BaseSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\UserEditForm.Designer.cs">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\YFEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\YFEditForm.Designer.cs">
+      <DependentUpon>YFEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\YFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\YFForm.Designer.cs">
+      <DependentUpon>YFForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectDateForm.Designer.cs">
+      <DependentUpon>SelectDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleFindForm.Designer.cs">
+      <DependentUpon>SimpleFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValueEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValueEditForm.Designer.cs">
+      <DependentUpon>ValueEditForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\PrintFormatEditForm.resx">
+      <DependentUpon>PrintFormatEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputForm.resx">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\AuthorizeCustomForm.resx">
+      <DependentUpon>AuthorizeCustomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\AuthorizetAppendForm.resx">
+      <DependentUpon>AuthorizetAppendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\AuthorizeForm.resx">
+      <DependentUpon>AuthorizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\BillForm.resx">
+      <DependentUpon>BillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\BZFLForm.resx">
+      <DependentUpon>BZFLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\BZXXEditForm.resx">
+      <DependentUpon>BZXXEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\BZXXForm.resx">
+      <DependentUpon>BZXXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\HWLXForm.resx">
+      <DependentUpon>HWLXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\MappingEditForm.resx">
+      <DependentUpon>MappingEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\MappingForm.resx">
+      <DependentUpon>MappingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\NodeForm.resx">
+      <DependentUpon>NodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\BZFLEditForm.resx">
+      <DependentUpon>BZFLEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\PrintFormatForm.resx">
+      <DependentUpon>PrintFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\CustomerEditForm.resx">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoutForm.resx">
+      <DependentUpon>LogoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryDateForm.resx">
+      <DependentUpon>QueryDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryRangeForm.resx">
+      <DependentUpon>QueryRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPrintForm.resx">
+      <DependentUpon>ReportPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_CollectByCustomer.rdlc" />
+    <EmbeddedResource Include="Report\Report_CollectByCP.rdlc" />
+    <EmbeddedResource Include="Report\Report_Day.rdlc" />
+    <EmbeddedResource Include="Report\Report_DaySummary.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_Account.rdlc" />
+    <EmbeddedResource Include="Report\Report_Detail.rdlc" />
+    <EmbeddedResource Include="Report\Report_FD.rdlc" />
+    <EmbeddedResource Include="Report\Report_GD.rdlc" />
+    <EmbeddedResource Include="Report\Report_Month.rdlc" />
+    <EmbeddedResource Include="Report\Report_Payin.rdlc" />
+    <EmbeddedResource Include="Report\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_CSXX.rdlc" />
+    <EmbeddedResource Include="Report\Report_JZDM.rdlc" />
+    <EmbeddedResource Include="Report\Report_YDRecord.rdlc" />
+    <EmbeddedResource Include="Report\Report_CollectByWD.rdlc" />
+    <EmbeddedResource Include="Report\Report_CollectByXL.rdlc" />
+    <EmbeddedResource Include="Management\BaseSettingForm.resx">
+      <DependentUpon>BaseSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\UserEditForm.resx">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\YFEditForm.resx">
+      <DependentUpon>YFEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\YFForm.resx">
+      <DependentUpon>YFForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_YB.rdlc" />
+    <EmbeddedResource Include="Report\Report_JZDMCPH.rdlc" />
+    <EmbeddedResource Include="Report\XCRecord.rdlc" />
+    <EmbeddedResource Include="Report\SHRecord.rdlc" />
+    <EmbeddedResource Include="ResetPasswordForm.resx">
+      <DependentUpon>ResetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectDateForm.resx">
+      <DependentUpon>SelectDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleFindForm.resx">
+      <DependentUpon>SimpleFindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValueEditForm.resx">
+      <DependentUpon>ValueEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AD2203BC-2E50-492D-937C-193519D23B81}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KYDataLogicLayer\KYDataLogicLayer.csproj">
+      <Project>{7D982B97-C19D-4945-8DCD-A5117FA048FA}</Project>
+      <Name>KYDataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KYDataModelLayer\KYDataModelLayer.csproj">
+      <Project>{CE794535-15D1-4957-A7DA-8040A25A6AF9}</Project>
+      <Name>KYDataModelLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataLogicLayer\WLDataLogicLayer.csproj">
+      <Project>{FE09B880-C31E-4926-BDFA-927A78C57ED7}</Project>
+      <Name>WLDataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataModelLayer\WLDataModelLayer.csproj">
+      <Project>{FB8C00C1-37B1-44FA-AE5F-F999643C1F9A}</Project>
+      <Name>WLDataModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\WLDataModelLayer.CollectByCP.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.CollectByCustomer.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.CollectByWD.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.CollectByXL.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.CSXXB.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.JZDMB.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.ReportDay.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.ReportMonth.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.WLB.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.ZDHZB.datasource" />
+    <None Include="Properties\DataSources\WLDataModelLayer.ZDMXB.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

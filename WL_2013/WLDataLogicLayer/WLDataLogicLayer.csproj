@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE09B880-C31E-4926-BDFA-927A78C57ED7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLDataLogicLayer</RootNamespace>
+    <AssemblyName>WLDataLogicLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorize.cs" />
+    <Compile Include="Bill.cs" />
+    <Compile Include="BZFLB.cs" />
+    <Compile Include="BZXXB.cs" />
+    <Compile Include="Collect.cs" />
+    <Compile Include="CSXXB.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DailyReport.cs" />
+    <Compile Include="EndOfDay.cs" />
+    <Compile Include="FDB.cs" />
+    <Compile Include="GDB.cs" />
+    <Compile Include="HWLXB.cs" />
+    <Compile Include="JZDMB.cs" />
+    <Compile Include="Mapping.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Payin.cs" />
+    <Compile Include="PrintFormat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime.cs" />
+    <Compile Include="Service References\WLCentralServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="WLB.cs" />
+    <Compile Include="WLT.cs" />
+    <Compile Include="YFB.cs" />
+    <Compile Include="ZDB.cs" />
+    <Compile Include="ZDHZB.cs" />
+    <Compile Include="ZDMXB.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AD2203BC-2E50-492D-937C-193519D23B81}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataAccessLayer\WLDataAccessLayer.csproj">
+      <Project>{D415A8A6-FD5C-44BA-A615-F1F849B4E94B}</Project>
+      <Name>WLDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataModelLayer\WLDataModelLayer.csproj">
+      <Project>{FB8C00C1-37B1-44FA-AE5F-F999643C1F9A}</Project>
+      <Name>WLDataModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\WLCentralServiceReference\Central.wsdl" />
+    <None Include="Service References\WLCentralServiceReference\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WLCentralServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WLCentralServiceReference\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WLCentralServiceReference\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WLCentralServiceReference\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WLCentralServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WLCentralServiceReference\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WLCentralServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WLCentralServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WLCentralServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WLManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SoftwareVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2013</Value>
+    </Setting>
+    <Setting Name="TechnicalSupport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0431-86769937</Value>
+    </Setting>
+    <Setting Name="PingEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PingTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="ConfirmClose" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AutoLogin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Userid" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoSyncServerDT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PageWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">756</Value>
+    </Setting>
+    <Setting Name="PageHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">415</Value>
+    </Setting>
+    <Setting Name="PageOffsetX" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PageOffsetY" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">80</Value>
+    </Setting>
+    <Setting Name="SoftwareName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">公路客运联网小件系统-营运平台</Value>
+    </Setting>
+    <Setting Name="QueryDateListLength" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

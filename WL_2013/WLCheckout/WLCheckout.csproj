@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC30E4A5-A84E-4095-9E26-AB5D775695B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLCheckout</RootNamespace>
+    <AssemblyName>WLCheckout</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://192.168.11.208/wlc/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.11.208/wlc/</InstallUrl>
+    <UpdateUrl>http://192.168.11.208/wlc/</UpdateUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>小件统计结账</ProductName>
+    <PublisherName>总站业务处</PublisherName>
+    <SuiteName>小件管理系统</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2B121D5E0E805BF531FABD01BF2667DFD8EB6A02</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WLCheckout_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WLCheckout.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>settings2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountNewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountNewForm.designer.cs">
+      <DependentUpon>AccountNewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountOpenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountOpenForm.designer.cs">
+      <DependentUpon>AccountOpenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutSettingForm.Designer.cs">
+      <DependentUpon>CheckoutSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientSettingForm.Designer.cs">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPHRelatedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CPHRelatedForm.Designer.cs">
+      <DependentUpon>CPHRelatedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSXXEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSXXEditForm.designer.cs">
+      <DependentUpon>CSXXEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSXXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSXXForm.designer.cs">
+      <DependentUpon>CSXXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetectCPHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetectCPHForm.Designer.cs">
+      <DependentUpon>DetectCPHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JZDMEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JZDMEditForm.designer.cs">
+      <DependentUpon>JZDMEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JZDMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JZDMForm.designer.cs">
+      <DependentUpon>JZDMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForm.Designer.cs">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackCPHForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackCPHForm.Designer.cs">
+      <DependentUpon>TrackCPHForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YDRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YDRecordForm.designer.cs">
+      <DependentUpon>YDRecordForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountNewForm.resx">
+      <DependentUpon>AccountNewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountOpenForm.resx">
+      <DependentUpon>AccountOpenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutSettingForm.resx">
+      <DependentUpon>CheckoutSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientSettingForm.resx">
+      <DependentUpon>ClientSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPHRelatedForm.resx">
+      <DependentUpon>CPHRelatedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSXXEditForm.resx">
+      <DependentUpon>CSXXEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSXXForm.resx">
+      <DependentUpon>CSXXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetectCPHForm.resx">
+      <DependentUpon>DetectCPHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JZDMEditForm.resx">
+      <DependentUpon>JZDMEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JZDMForm.resx">
+      <DependentUpon>JZDMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QueryForm.resx">
+      <DependentUpon>QueryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackCPHForm.resx">
+      <DependentUpon>TrackCPHForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YDRecordForm.resx">
+      <DependentUpon>YDRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AD2203BC-2E50-492D-937C-193519D23B81}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLCommon\WLCommon.csproj">
+      <Project>{58F365AA-5A34-4D56-BED2-F61296629087}</Project>
+      <Name>WLCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataLogicLayer\WLDataLogicLayer.csproj">
+      <Project>{FE09B880-C31E-4926-BDFA-927A78C57ED7}</Project>
+      <Name>WLDataLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WLDataModelLayer\WLDataModelLayer.csproj">
+      <Project>{FB8C00C1-37B1-44FA-AE5F-F999643C1F9A}</Project>
+      <Name>WLDataModelLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="settings2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

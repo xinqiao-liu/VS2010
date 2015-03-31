@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6d11e0cc-f6e9-49a4-a7d0-570c7e00b721" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.26.9.210/WLCentralService/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="8358e9b4-a144-4190-b3ec-7e79ab36c31f" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="ff0600d1-e41e-4e1e-9b04-61fdc02124e4" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="4b108afb-23d4-4a21-9ef6-95fb359c1f6d" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?xsd=xsd4" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="02dbbdca-32c2-4487-97ae-8c3f0ace7604" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="7287356d-ca0f-4d51-8b06-5e9166b26a44" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="0ad281b4-c489-4bd5-97e6-ab83e90cc188" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?disco" />
+    <MetadataFile FileName="Central.wsdl" MetadataType="Wsdl" ID="87ca3e43-9cfb-4015-8f57-3e90fd7fe605" SourceId="1" SourceUrl="http://wl-server/WLCentralService/Service.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

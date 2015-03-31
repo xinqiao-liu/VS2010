@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WLDataModelLayer" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WLDataModelLayer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://wl-server/WLCentralService/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="WLB">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BXD_SN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BXF" type="xs:decimal" />
+      <xs:element minOccurs="0" name="BZF" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CDT" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CZ_BC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CZ_CPH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CZ_DZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CZ_LC" type="xs:int" />
+      <xs:element minOccurs="0" name="CZ_RQ" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CZ_SJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CZ_YX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FHR_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FHR_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FHR_Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FH_CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FH_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FH_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Freeze" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HW_BJ" type="xs:decimal" />
+      <xs:element minOccurs="0" name="HW_JS" type="xs:int" />
+      <xs:element minOccurs="0" name="HW_LX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HW_MC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JFTJ" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JFZL" type="xs:decimal" />
+      <xs:element minOccurs="0" name="JHR_Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JHR_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JH_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JH_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Money" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Node" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SK_Type" type="tns:SKType" />
+      <xs:element minOccurs="0" name="SN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sets" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Synced" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TYF" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Total" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YD_Type" type="tns:YDType" />
+      <xs:element minOccurs="0" name="ZT_Type" type="tns:ZTType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WLB" nillable="true" type="tns:WLB" />
+  <xs:simpleType name="SKType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="现金">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">88</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="到付">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">68</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="记账">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">65</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SKType" nillable="true" type="tns:SKType" />
+  <xs:simpleType name="YDType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="本地">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">83</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="中心">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">82</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="结账">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">67</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="YDType" nillable="true" type="tns:YDType" />
+  <xs:simpleType name="ZTType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="接货">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">74</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="装车">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">90</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="卸车">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">88</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="取货">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">83</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="作废">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">70</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ZTType" nillable="true" type="tns:ZTType" />
+  <xs:complexType name="ArrayOfWLB">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WLB" nillable="true" type="tns:WLB" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWLB" nillable="true" type="tns:ArrayOfWLB" />
+  <xs:complexType name="WLT">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CDT" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Node" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SN" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WLT" nillable="true" type="tns:WLT" />
+  <xs:complexType name="ArrayOfWLT">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WLT" nillable="true" type="tns:WLT" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWLT" nillable="true" type="tns:ArrayOfWLT" />
+</xs:schema>
