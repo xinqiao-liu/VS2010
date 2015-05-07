@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <setting index="0" name="SN" left="" right="" width="" height="" fontname="" fontsize="" fontstyle="" type="text"></setting>
+  <setting index="1" name="MX" left="" right="" width="" height="" fontname="" fontsize="" fontstyle="" type="list"></setting>
+</configuration>

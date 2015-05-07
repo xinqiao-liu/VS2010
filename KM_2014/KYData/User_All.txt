@@ -1,0 +1,109 @@
+USE [kyz_bs]
+GO
+
+/****** Object:  Table [dbo].[user_department]    Script Date: 01/25/2014 16:48:09 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[user_department](
+	[depart_id] [int] NOT NULL,
+	[user_id] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_USER_DEPARTMENT] PRIMARY KEY CLUSTERED 
+(
+	[depart_id] ASC,
+	[user_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
+USE [kyz_bs]
+GO
+
+/****** Object:  Table [dbo].[user_right]    Script Date: 01/25/2014 16:48:21 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[user_right](
+	[menu_id] [int] NOT NULL,
+	[role_id] [int] NOT NULL,
+ CONSTRAINT [PK_USER_RIGHT] PRIMARY KEY CLUSTERED 
+(
+	[menu_id] ASC,
+	[role_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+USE [kyz_bs]
+GO
+
+/****** Object:  Table [dbo].[user_role]    Script Date: 01/25/2014 16:48:30 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[user_role](
+	[role_id] [int] NOT NULL,
+	[user_id] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_USER_ROLE] PRIMARY KEY CLUSTERED 
+(
+	[role_id] ASC,
+	[user_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON, FILLFACTOR = 90) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+USE [kyz_bs]
+GO
+
+/****** Object:  Table [dbo].[user_system]    Script Date: 01/25/2014 16:48:40 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[user_system](
+	[system_id] [int] NOT NULL,
+	[user_id] [varchar](20) NOT NULL,
+ CONSTRAINT [PK_USER_SYSTEM] PRIMARY KEY CLUSTERED 
+(
+	[system_id] ASC,
+	[user_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

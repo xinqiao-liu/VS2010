@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="06a3877f-43cf-4bae-9e99-b7dff5d9288e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="7b690c99-8300-4cc5-aeca-3669427e62af" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9cc0ce63-fe9f-4330-b79a-e3c2f007aec9" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9ae23433-6610-40b4-a506-5b35be8b163e" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="29253b8f-32f3-496a-b497-6f2767e170ee" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="KM.KYData.Model.xsd" MetadataType="Schema" ID="43f2d781-4ce0-4d1a-a190-aca8f861ad9a" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="System.Data.SqlClient.xsd" MetadataType="Schema" ID="9e2209fa-5813-490d-b961-dc01f215752a" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+    <MetadataFile FileName="KYServiceLibrary.xsd" MetadataType="Schema" ID="2dfeef23-2e93-4875-b14d-f3cc6d1f5e20" SourceId="1" SourceUrl="http://192.168.11.210/KYServiceLibrary/Service.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
