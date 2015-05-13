@@ -24,7 +24,7 @@
     <asp:RadioButton ID="rdoCurrent" runat="server" Checked="True" GroupName="1" 
         Text="当前记录" />
     <asp:RadioButton ID="rdoHistory" runat="server" GroupName="1" Text="历史记录" />
-    <asp:Button ID="btnQuery" runat="server" Text="查询" onclick="btnQuery_Click" />
+    <asp:Button ID="btnQuery" runat="server" Text="查询" onclick="btnQuery_Click" /> 
     <hr />
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
